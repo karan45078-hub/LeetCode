@@ -26,7 +26,7 @@ Both strings must have the same set of characters
 
 ---
 
-## 💻 LeetCode (C++) look like: 
+## 💻 LeetCode (C++): 
 
 ```cpp
 class Solution {
