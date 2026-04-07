@@ -205,8 +205,8 @@ Let's talk about coding, algorithms, and problem-solving!
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-%40karan45078-hub-black?style=for-the-badge&logo=github)]([https://github.com/karan45078-hub](https://github.com/karan45078-hub))
-[![LeetCode](https://img.shields.io/badge/LeetCode-%40karan45078-hub-FFA116?style=for-the-badge&logo=leetcode)]([https://leetcode.com](https://leetcode.com/u/karan45078/))
+[![GitHub](https://img.shields.io/badge/GitHub-%40212--del-black?style=for-the-badge&logo=github)]([https://github.com/karan45078-hub](https://github.com/karan45078-hub))
+[![LeetCode](https://img.shields.io/badge/LeetCode-%40212--del-FFA116?style=for-the-badge&logo=leetcode)]([https://leetcode.com]([https://leetcode.com](https://leetcode.com/u/karan45078/))
 [![Email](https://img.shields.io/badge/Email-Contact%20Me-blue?style=for-the-badge&logo=gmail)](mailto:karan45078@gmail.com)
 
 </div>
