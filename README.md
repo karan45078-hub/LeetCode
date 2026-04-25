@@ -182,10 +182,11 @@ Through solving these problems, I've solidified my understanding of:
 ## 🚀 How to Use This Repository
 
 1. **Browse Solutions** - Each problem folder contains:
-   - 📝 Detailed problem explanation
-   - 🧠 Approach and intuition
-   - 💻 Clean C++ code
-   - ⏱️ Complexity analysis
+   - 📝 Detailed problem explanation with examples and traces
+   - 🧠 In-depth approach and intuition (not just the algorithm)
+   - 💻 Clean, well-commented C++ code
+   - ⏱️ Complexity analysis (time **and** space)
+   - 🔗 Related problems to explore next
 
 2. **Study the Code** - Solutions follow best practices:
    - Clear variable naming
@@ -242,6 +243,6 @@ If my solutions helped you or you found them useful, don't forget to give this r
 
 **Happy Coding! 🎉**
 
-*Last Updated: 2026-04-07 02:10:12*
+*Last Updated: 2026-04-25*
 
 </div>
