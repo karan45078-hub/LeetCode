@@ -2,9 +2,9 @@
 
 <div align="center">
 
-[![GitHub followers](https://img.shields.io/github/followers/212-del?style=social)](https://github.com/212-del)
-[![GitHub stars](https://img.shields.io/github/stars/212-del/LeetCode?style=social)](https://github.com/212-del/LeetCode)
-[![C++ Language](https://img.shields.io/badge/Language-C%2B%2B-blue?style=flat&logo=cplusplus)](https://github.com/212-del/LeetCode)
+[![GitHub followers](https://img.shields.io/github/followers/karan45078-hub?style=social)](https://github.com/karan45078-hub)
+[![GitHub stars](https://img.shields.io/github/stars/karan45078-hub/LeetCode?style=social)](https://github.com/karan45078-hub/LeetCode)
+[![C++ Language](https://img.shields.io/badge/Language-C%2B%2B-blue?style=flat&logo=cplusplus)](https://github.com/karan45078-hub/LeetCode)
 
 📝 **Documenting my problem-solving journey with clean, optimized C++ solutions**
 
@@ -41,7 +41,7 @@ The solutions are organized by **problem categories** to make navigation easier:
 
 ## 🔢 Array Related Questions
 
-### [0027. Remove Element](https://github.com/212-del/LeetCode/tree/main/Array%20Related%20Questions/0027.%20Remove%20Element)
+### [0027. Remove Element](https://github.com/karan45078-hub/LeetCode/tree/main/Array%20Related%20Questions/0027.%20Remove%20Element)
 
 **Difficulty:** 🟢 Easy | **Status:** ✅ Solved
 
@@ -50,11 +50,11 @@ Given an integer array `nums` and an integer `val`, remove all occurrences of `v
 - **Core Concept:** Two-pointer technique for in-place array modification
 - **Time Complexity:** O(n) | **Space Complexity:** O(1)
 
-[📖 View Solution](https://github.com/212-del/LeetCode/tree/main/Array%20Related%20Questions/0027.%20Remove%20Element/Solution.cpp)
+[📖 View Solution](https://github.com/karan45078-hub/LeetCode/tree/main/Array%20Related%20Questions/0027.%20Remove%20Element/Solution.cpp)
 
 ---
 
-### [0283. Move Zeroes](https://github.com/212-del/LeetCode/tree/main/Array%20Related%20Questions/0283.%20Move%20Zeroes)
+### [0283. Move Zeroes](https://github.com/karan45078-hub/LeetCode/tree/main/Array%20Related%20Questions/0283.%20Move%20Zeroes)
 
 **Difficulty:** 🟢 Easy | **Status:** ✅ Solved
 
@@ -63,11 +63,11 @@ Given an integer array `nums`, move all `0`'s to the end while maintaining the r
 - **Core Concept:** Two-pointer in-place manipulation
 - **Time Complexity:** O(n) | **Space Complexity:** O(1)
 
-[📖 View Solution](https://github.com/212-del/LeetCode/tree/main/Array%20Related%20Questions/0283.%20Move%20Zeroes/Solution.cpp)
+[📖 View Solution](https://github.com/karan45078-hub/LeetCode/tree/main/Array%20Related%20Questions/0283.%20Move%20Zeroes/Solution.cpp)
 
 ---
 
-### [0867. Transpose Matrix](https://github.com/212-del/LeetCode/tree/main/Array%20Related%20Questions/0867.%20Transpose%20Matrix)
+### [0867. Transpose Matrix](https://github.com/karan45078-hub/LeetCode/tree/main/Array%20Related%20Questions/0867.%20Transpose%20Matrix)
 
 **Difficulty:** 🟢 Easy | **Status:** ✅ Solved
 
@@ -76,11 +76,11 @@ Given a 2D integer array `matrix`, return the transpose of `matrix`. The transpo
 - **Core Concept:** 2D array manipulation and matrix operations
 - **Time Complexity:** O(m × n) | **Space Complexity:** O(m × n)
 
-[📖 View Solution](https://github.com/212-del/LeetCode/tree/main/Array%20Related%20Questions/0867.%20Transpose%20Matrix/Solution.cpp)
+[📖 View Solution](https://github.com/karan45078-hub/LeetCode/tree/main/Array%20Related%20Questions/0867.%20Transpose%20Matrix/Solution.cpp)
 
 ---
 
-### [2022. Convert 1D Array Into 2D Array](https://github.com/212-del/LeetCode/tree/main/Array%20Related%20Questions/2022.%20Convert%201D%20Array%20Into%202D%20Array)
+### [2022. Convert 1D Array Into 2D Array](https://github.com/karan45078-hub/LeetCode/tree/main/Array%20Related%20Questions/2022.%20Convert%201D%20Array%20Into%202D%20Array)
 
 **Difficulty:** 🟢 Easy | **Status:** ✅ Solved
 
@@ -89,13 +89,13 @@ You are given a **0-indexed** 1-dimensional (1D) integer array `original`, and t
 - **Core Concept:** Array reshaping and dimensional conversion
 - **Time Complexity:** O(m × n) | **Space Complexity:** O(1)
 
-[📖 View Solution](https://github.com/212-del/LeetCode/tree/main/Array%20Related%20Questions/2022.%20Convert%201D%20Array%20Into%202D%20Array/Solution.cpp)
+[📖 View Solution](https://github.com/karan45078-hub/LeetCode/tree/main/Array%20Related%20Questions/2022.%20Convert%201D%20Array%20Into%202D%20Array/Solution.cpp)
 
 ---
 
 ## 🔤 String Related Questions
 
-### [0242. Valid Anagram](https://github.com/212-del/LeetCode/tree/main/String%20Related%20Questions/0242.%20Valid%20Anagram)
+### [0242. Valid Anagram](https://github.com/karan45078-hub/LeetCode/tree/main/String%20Related%20Questions/0242.%20Valid%20Anagram)
 
 **Difficulty:** 🟢 Easy | **Status:** ✅ Solved
 
@@ -107,11 +107,11 @@ Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `f
 - **Time Complexity:** O(n) | **Space Complexity:** O(1)
 - **Example:** `s = "anagram"`, `t = "nagaram"` → **true** ✨
 
-[📖 View Detailed Explanation](https://github.com/212-del/LeetCode/tree/main/String%20Related%20Questions/0242.%20Valid%20Anagram)
+[📖 View Detailed Explanation](https://github.com/karan45078-hub/LeetCode/tree/main/String%20Related%20Questions/0242.%20Valid%20Anagram)
 
 ---
 
-### [1657. Determine if Two Strings Are Close](https://github.com/212-del/LeetCode/tree/main/String%20Related%20Questions/1657.%20Determine%20if%20Two%20Strings%20Are%20Close)
+### [1657. Determine if Two Strings Are Close](https://github.com/karan45078-hub/LeetCode/tree/main/String%20Related%20Questions/1657.%20Determine%20if%20Two%20Strings%20Are%20Close)
 
 **Difficulty:** 🟡 Medium | **Status:** ✅ Solved
 
@@ -123,11 +123,11 @@ Two strings are considered **close** if you can swap any two characters or trans
 - **Time Complexity:** O(n) | **Space Complexity:** O(1)
 - **Example:** `word1 = "abc"`, `word2 = "bca"` → **true** 🔄
 
-[📖 View Detailed Explanation](https://github.com/212-del/LeetCode/tree/main/String%20Related%20Questions/1657.%20Determine%20if%20Two%20Strings%20Are%20Close)
+[📖 View Detailed Explanation](https://github.com/karan45078-hub/LeetCode/tree/main/String%20Related%20Questions/1657.%20Determine%20if%20Two%20Strings%20Are%20Close)
 
 ---
 
-### [3889. Mirror Frequency Distance](https://github.com/212-del/LeetCode/tree/main/String%20Related%20Questions/3889.%20Mirror%20Frequency%20Distance)
+### [3889. Mirror Frequency Distance](https://github.com/karan45078-hub/LeetCode/tree/main/String%20Related%20Questions/3889.%20Mirror%20Frequency%20Distance)
 
 **Difficulty:** 🔴 Hard | **Status:** ✅ Solved
 
@@ -142,7 +142,7 @@ Return the count of unmatched mirror characters.
 - **Approach:** Dual frequency arrays with mirror offset technique
 - **Time Complexity:** O(n) | **Space Complexity:** O(1)
 
-[📖 View Detailed Explanation](https://github.com/212-del/LeetCode/tree/main/String%20Related%20Questions/3889.%20Mirror%20Frequency%20Distance)
+[📖 View Detailed Explanation](https://github.com/karan45078-hub/LeetCode/tree/main/String%20Related%20Questions/3889.%20Mirror%20Frequency%20Distance)
 
 ---
 
@@ -206,8 +206,9 @@ Let's talk about coding, algorithms, and problem-solving!
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-%40212--del-black?style=for-the-badge&logo=github)](https://github.com/212-del)
-[![LeetCode](https://img.shields.io/badge/LeetCode-%40212--del-FFA116?style=for-the-badge&logo=leetcode)](https://leetcode.com)
+[![GitHub](https://img.shields.io/badge/GitHub-%40karan45078--hub-black?style=for-the-badge&logo=github)](https://github.com/karan45078-hub)
+[![LeetCode](https://img.shields.io/badge/LeetCode-%40karan45078--hub-FFA116?style=for-the-badge&logo=leetcode)](https://leetcode.com/u/karan45078/)
+[![Email](https://img.shields.io/badge/Email-Contact%20Me-blue?style=for-the-badge&logo=gmail)](mailto:karan45078@gmail.com)
 
 </div>
 
