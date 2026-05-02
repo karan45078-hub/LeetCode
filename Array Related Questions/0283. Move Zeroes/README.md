@@ -1,64 +1,50 @@
-# 😅 Move Zeroes (C++)
+<div align="center">
 
-> Not gonna lie… this problem looks easy, but it’s actually a nice test of how clean your thinking is.
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode Logo" width="80"/>
 
----
+# 0️⃣ LeetCode 283 — Move Zeroes
 
-## 🤔 What this does
+[![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen?style=flat-square)](https://leetcode.com/problems/move-zeroes/)
+[![Language](https://img.shields.io/badge/Language-C%2B%2B-blue?style=flat-square&logo=cplusplus)](./Solution.cpp)
+[![Status](https://img.shields.io/badge/Status-Solved%20✅-success?style=flat-square)]()
+[![Topic](https://img.shields.io/badge/Topic-Array%20%7C%20Two%20Pointers-orange?style=flat-square)]()
 
-Given an array, the goal is simple:
-
-* Push all `0`s to the end
-* Keep the order of other elements the same
-
-Sounds basic… but the **way you solve it matters**.
+</div>
 
 ---
 
-## 💭 Honest Thoughts
+## 📌 Problem Statement
 
-At first, I thought:
+> Given an integer array `nums`, move all `0`'s to the **end** while maintaining the **relative order** of the non-zero elements. Do this **in-place** without making a copy of the array.
 
-> “Just swap zeros with elements from the back.”
-
-But that quickly gets messy and inefficient.
-
-Then comes the cleaner idea:
-
-> “Why not just shift non-zero elements forward?”
-
-And boom — problem becomes simple and elegant.
-
----
-
-## 🧠 The Actual Idea (No Overhype)
-
-* Keep a pointer (`insertPos`)
-* Traverse the array once
-* Place non-zero elements at the front
-* Fill the rest with zeroes
-
-No tricks. No fancy stuff. Just clean logic.
-
----
-
-## ⚡ Complexity (Straight Talk)
-
-* Time → `O(n)` (you have to look at everything anyway)
-* Space → `O(1)` (no extra memory, which is nice)
-
----
-
-## 🔍 Example
-
+**Example:**
 ```
-Input:  2 0 4 6 0 9 0 3 3
-Output: 2 4 6 9 3 3 0 0 0
+Input:  [0, 1, 0, 3, 12]
+Output: [1, 3, 12, 0, 0]
 ```
 
 ---
 
-## 🛠️ Code
+## 🧠 Intuition & Approach
+
+Think of it as **compacting** the array: we slide all non-zero values to the front (preserving their order), then fill the tail with zeros.
+
+We use a `nonZero` pointer that tracks the next slot for a non-zero value. When `nums[i]` is non-zero, we **swap** it with `nums[nonZero]` and advance `nonZero`. This keeps zeros drifting toward the right naturally.
+
+```
+[0, 1, 0, 3, 12]
+ ^nonZero ^i
+
+i=0: nums[0]==0, skip
+i=1: nums[1]==1 → swap(nums[0],nums[1]) → [1,0,0,3,12], nonZero=1
+i=2: nums[2]==0, skip
+i=3: nums[3]==3 → swap(nums[1],nums[3]) → [1,3,0,0,12], nonZero=2
+i=4: nums[4]==12 → swap(nums[2],nums[4]) → [1,3,12,0,0], nonZero=3 ✅
+```
+
+---
+
+## 💻 Solution (C++)
 
 ```cpp
 #include <iostream>
@@ -66,70 +52,59 @@ Output: 2 4 6 9 3 3 0 0 0
 using namespace std;
 
 void moveZeroes(vector<int>& nums) {
-    int insertPos = 0;
-
-    for (int num : nums) {
-        if (num != 0) {
-            nums[insertPos++] = num;
+    int nonZero = 0;
+    for (int i = 0; i < nums.size(); i++) {
+        if (nums[i] != 0) {
+            swap(nums[nonZero], nums[i]);
+            nonZero++;
         }
     }
-
-    while (insertPos < nums.size()) {
-        nums[insertPos++] = 0;
-    }
-}
-
-int main() {
-    vector<int> arr = {2, 0, 4, 6, 0, 9, 0, 3, 3};
-
-    moveZeroes(arr);
-
-    for (int num : arr) {
-        cout << num << " ";
-    }
-
-    return 0;
 }
 ```
 
 ---
 
-## 🧪 Try It Yourself
+## ⏱️ Complexity Analysis
 
-Before running the code, pause for a second:
-
-👉 What would be the output for this?
-
-```
-0 1 0 2 0 3
-```
-
-<details>
-<summary>Click to reveal answer</summary>
-
-```
-1 2 3 0 0 0
-```
-
-</details>
+| Metric | Value | Reason |
+|--------|-------|--------|
+| ⏰ Time | **O(n)** | One pass through the array |
+| 💾 Space | **O(1)** | In-place swapping, no auxiliary array |
 
 ---
 
-## 📌 What I Learned
+## 📊 Examples
 
-* Simple problems still test your thinking
-* Clean code > clever code
-* Two-pointer technique is everywhere
-
----
-
-## 🧍 Final Thought
-
-This isn’t a “wow” problem.
-
-But solving it cleanly?
-That’s what actually matters in interviews.
+| Input | Output |
+|-------|--------|
+| `[0,1,0,3,12]` | `[1,3,12,0,0]` |
+| `[0]` | `[0]` |
+| `[1,2,3]` | `[1,2,3]` (no zeros, no change) |
+| `[0,0,1]` | `[1,0,0]` |
 
 ---
 
-⭐ If you relate to this struggle, you’re on the right track.
+## 🔑 Key Takeaways
+
+- 🎯 Swap-based two-pointer keeps the **relative order** of non-zero elements intact
+- 🚫 Avoid the temptation to use a second array — the whole point is O(1) space
+- 💡 An alternative is to overwrite (like problem 27) then fill zeros — both are valid but swap minimises write operations when zeros are sparse
+- 🧩 This pattern appears in partition problems (Dutch National Flag, quicksort pivot)
+
+---
+
+## 🔗 Related Problems
+
+| # | Problem | Similarity |
+|---|---------|-----------|
+| 27 | [Remove Element](../0027.%20Remove%20Element) | Same two-pointer overwrite |
+| 75 | Sort Colors | Extended 3-way partition |
+| 26 | Remove Duplicates from Sorted Array | In-place filter |
+
+---
+
+<div align="center">
+
+*Part of the [LeetCode Solutions](../../README.md) repository · Language: C++ · Category: Array*
+
+</div>
